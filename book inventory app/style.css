@@ -1,0 +1,109 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    padding: 30px;
+    background: #f5f5f5;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 12px;
+    text-align: center;
+}
+
+thead {
+    background: linear-gradient(to right, #89c2ff, #5fa8d3);
+}
+
+/* ===== Row Backgrounds (Attribute Selectors) ===== */
+
+tr[class="read"] {
+    background-image: linear-gradient(to right, #b7f8b7, #7ed67a);
+}
+
+tr[class="to-read"] {
+    background-image: linear-gradient(to right, #e0e0e0, #cfcfcf);
+}
+
+tr[class="in-progress"] {
+    background-image: linear-gradient(to right, #ffe29f, #ffa751);
+}
+
+/* ===== Common span styling ===== */
+
+span {
+    display: inline-block;
+}
+
+/* Status + Rate size */
+
+span[class="status"],
+span[class^="rate"] {
+    height: 35px;
+    width: 120px;
+    padding: 6px;
+    border-radius: 20px;
+}
+
+/* ===== Status Styling Based on Row ===== */
+
+tr[class="read"] span[class="status"] {
+    border: 2px solid green;
+    background-image: linear-gradient(to right, #56ab2f, #a8e063);
+}
+
+tr[class="to-read"] span[class="status"] {
+    border: 2px solid gray;
+    background-image: linear-gradient(to right, #ff5858, #ff0000);
+}
+
+tr[class="in-progress"] span[class="status"] {
+    border: 2px solid orange;
+    background-image: linear-gradient(to right, #f7971e, #ffd200);
+}
+
+/* ===== Rate Circles ===== */
+
+span[class^="rate"]>span {
+    height: 15px;
+    width: 15px;
+    margin: 2px;
+    border-radius: 50%;
+    border: 1px solid #777;
+    background-color: #ddd;
+}
+
+/* ===== Fill Rating ===== */
+
+span[class~="one"] span:first-child {
+    background-image: linear-gradient(to right, gold, orange);
+}
+
+span[class~="two"] span:nth-child(1),
+span[class~="two"] span:nth-child(2) {
+    background-image: linear-gradient(to right, gold, orange);
+}
+
+span[class~="three"] span {
+    background-image: linear-gradient(to right, gold, orange);
+}
+
+/* ===== Responsive ===== */
+
+@media (max-width: 600px) {
+    table {
+        font-size: 14px;
+    }
+}
