@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>JS Documentation</title>
+</head>
+
+<body>
+
+    <nav id="navbar">
+        <header>JS Documentation</header>
+
+        <a class="nav-link" href="#Introduction">Introduction</a>
+        <a class="nav-link" href="#What_you_should_already_know">What you should already know</a>
+        <a class="nav-link" href="#JavaScript_and_Java">JavaScript and Java</a>
+        <a class="nav-link" href="#Hello_World">Hello World</a>
+        <a class="nav-link" href="#Variables">Variables</a>
+        <a class="nav-link" href="#Declaring_variables">Declaring variables</a>
+        <a class="nav-link" href="#Variable_scope">Variable scope</a>
+        <a class="nav-link" href="#Global_variables">Global variables</a>
+        <a class="nav-link" href="#Constants">Constants</a>
+        <a class="nav-link" href="#Data_types">Data types</a>
+        <a class="nav-link" href="#if_else_statement">if else statement</a>
+        <a class="nav-link" href="#while_statement">while statement</a>
+        <a class="nav-link" href="#Function_declarations">Function declarations</a>
+        <a class="nav-link" href="#Reference">Reference</a>
+
+    </nav>
+
+    <main id="main-doc">
+
+        <section class="main-section" id="Introduction">
+            <header>Introduction</header>
+            <p>JavaScript is a lightweight scripting language.</p>
+            <p>It is used to create dynamic web pages.</p>
+            <code>let x = 5;</code>
+            <ul>
+                <li>Client-side</li>
+                <li>Interpreted</li>
+                <li>Dynamic</li>
+            </ul>
+        </section>
+
+        <section class="main-section" id="What_you_should_already_know">
+            <header>What you should already know</header>
+            <p>You should understand HTML basics.</p>
+            <p>You should know basic CSS.</p>
+            <code>&lt;p&gt;Paragraph&lt;/p&gt;</code>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Basic programming</li>
+            </ul>
+        </section>
+
+        <section class="main-section" id="JavaScript_and_Java">
+            <header>JavaScript and Java</header>
+            <p>JavaScript is different from Java.</p>
+            <p>They serve different purposes.</p>
+            <code>console.log("JavaScript");</code>
+            <ul>
+                <li>Java is compiled</li>
+                <li>JS is interpreted</li>
+                <li>Different syntax</li>
+            </ul>
+        </section>
+
+        <section class="main-section" id="Hello_World">
+            <header>Hello World</header>
+            <p>This is the simplest program.</p>
+            <p>It prints Hello World.</p>
+            <code>alert("Hello World");</code>
+            <ul>
+                <li>First example</li>
+                <li>Simple output</li>
+                <li>Easy syntax</li>
+            </ul>
+        </section>
+
+        <section class="main-section" id="Variables">
+            <header>Variables</header>
+            <p>Variables store data values.</p>
+            <p>They can be declared using let, var, or const.</p>
+            <code>let age = 20;</code>
+            <ul>
+                <li>let</li>
+                <li>var</li>
+                <li>const</li>
+            </ul>
+        </section>
+
+        <section class="main-section" id="Declaring_variables">
+            <header>Declaring variables</header>
+            <p>Variables must be declared before use.</p>
+            <p>Use modern keywords like let and const.</p>
+            <code>const name = "Ali";</code>
+            <ul>
+                <li>Declaration</li>
+                <li>Initialization</li>
+                <li>Assignment</li>
+            </ul>
+        </section>
+
+        <section class="main-section" id="Variable_scope">
+            <header>Variable scope</header>
+            <p>Scope determines accessibility.</p>
+            <p>There are block and function scopes.</p>
+            <code>
+function test() {
+  let a = 10;
+}
+</code>
+            <ul>
+                <li>Local scope</li>
+                <li>Block scope</li>
+                <li>Function scope</li>
+            </ul>
+        </section>
+
+        <section class="main-section" id="Global_variables">
+            <header>Global variables</header>
+            <p>Global variables are accessible everywhere.</p>
+            <p>They are declared outside functions.</p>
+            <code>var globalVar = 100;</code>
+            <ul>
+                <li>Accessible globally</li>
+                <li>Risk of conflicts</li>
+                <li>Stored in window object</li>
+            </ul>
+        </section>
+
+        <section class="main-section" id="Constants">
+            <header>Constants</header>
+            <p>Constants cannot be reassigned.</p>
+            <p>They are declared using const.</p>
+            <code>const PI = 3.14;</code>
+            <ul>
+                <li>Immutable reference</li>
+                <li>Block scoped</li>
+                <li>Must initialize</li>
+            </ul>
+        </section>
+
+        <section class="main-section" id="Data_types">
+            <header>Data types</header>
+            <p>JavaScript has several data types.</p>
+            <p>Primitive and reference types exist.</p>
+            <code>typeof "Hello";</code>
+            <ul>
+                <li>String</li>
+                <li>Number</li>
+                <li>Boolean</li>
+            </ul>
+        </section>
+
+        <section class="main-section" id="if_else_statement">
+            <header>if else statement</header>
+            <p>The if statement executes based on condition.</p>
+            <p>Else handles alternative case.</p>
+            <code>
+if (x > 5) {
+  console.log("Greater");
+} else {
+  console.log("Smaller");
+}
+</code>
+            <ul>
+                <li>Conditional logic</li>
+                <li>Comparison</li>
+                <li>Decision making</li>
+            </ul>
+        </section>
+
+        <section class="main-section" id="while_statement">
+            <header>while statement</header>
+            <p>The while loop repeats code.</p>
+            <p>It runs while condition is true.</p>
+            <code>
+let i = 0;
+while (i < 3) {
+  i++;
+}
+</code>
+            <ul>
+                <li>Loop</li>
+                <li>Repetition</li>
+                <li>Condition check</li>
+            </ul>
+        </section>
+
+        <section class="main-section" id="Function_declarations">
+            <header>Function declarations</header>
+            <p>Functions group reusable code.</p>
+            <p>They run when called.</p>
+            <code>
+function greet(name) {
+  return "Hello " + name;
+}
+</code>
+            <ul>
+                <li>Reusable</li>
+                <li>Parameters</li>
+                <li>Return values</li>
+            </ul>
+        </section>
+
+        <section class="main-section" id="Reference">
+            <header>Reference</header>
+            <p>This documentation is for learning purposes.</p>
+            <p>Inspired by MDN and JavaScript guides.</p>
+            <code>https://developer.mozilla.org</code>
+            <ul>
+                <li>MDN</li>
+                <li>FreeCodeCamp</li>
+                <li>W3Schools</li>
+            </ul>
+        </section>
+
+    </main>
+</body>
+
+</html>
